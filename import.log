@@ -1,0 +1,29 @@
+2025-07-04 14:43:09 [INFO] Conectando a la base de datos: .\\camping.db
+2025-07-04 14:43:09 [INFO] Libro: precios.xlsx — 14 hojas
+2025-07-04 14:43:09 [ERROR] ⚠️  Error durante la importación — rollback ejecutado
+Traceback (most recent call last):
+  File "C:\Users\ENRIQUE\geminiAgent\load_pricing2025.py", line 271, in main
+    accom_map = load_accommodations(pd.read_excel(xls, "Tipo de Alojamiento"), session)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ENRIQUE\geminiAgent\load_pricing2025.py", line 167, in load_accommodations
+    capacity=int(row["capacity"]),
+             ^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '2 personas max'
+2025-07-04 17:31:45,238 [INFO] Tablas creadas en la BD
+2025-07-04 17:31:45,733 [INFO] Libro: precios.xlsx — 14 hojas
+2025-07-04 17:31:45,749 [INFO] Hoja 'Tipo de Alojamiento' importada → 10 alojamientos
+2025-07-04 17:31:45,753 [INFO] IMPORTACIÓN COMPLETADA ✅
+2025-07-04 17:39:07 [   INFO] Tablas creadas en la BD → C:\Users\ENRIQUE\geminiAgent\camping.db
+2025-07-04 17:39:07 [   INFO] Libro: precios.xlsx – 14 hojas
+2025-07-04 17:39:08 [   INFO] Hoja 'Tipo de Alojamiento' importada → 10 alojamientos
+2025-07-04 17:39:08 [WARNING] Parcela Pequeña – omitida (No se encontraron columnas de descuento (<11/15, 11-29, >30))
+2025-07-04 17:39:08 [WARNING] Parcela Mediana – omitida (No se encontraron columnas de descuento (<11/15, 11-29, >30))
+2025-07-04 17:39:08 [WARNING] Parcela Grande – omitida (No se encontraron columnas de descuento (<11/15, 11-29, >30))
+2025-07-04 17:39:08 [WARNING] Parcela Doble – omitida (No se encontraron columnas de descuento (<11/15, 11-29, >30))
+2025-07-04 17:39:08 [WARNING] Bungalow Classic – omitida (No se encontraron columnas de descuento (<11/15, 11-29, >30))
+2025-07-04 17:39:08 [WARNING] Bungalow Plus – omitida (No se encontraron columnas de descuento (<11/15, 11-29, >30))
+2025-07-04 17:39:08 [WARNING] Bungalow Comfort – omitida (No se encontraron columnas de descuento (<11/15, 11-29, >30))
+2025-07-04 17:39:08 [WARNING] Bungalow Luxe – omitida (No se encontraron columnas de descuento (<11/15, 11-29, >30))
+2025-07-04 17:39:08 [WARNING] Tinys – omitida (No se encontraron columnas de descuento (<11/15, 11-29, >30))
+2025-07-04 17:39:08 [   INFO] Hoja 'Suplementos Parcelas 2025' → suplementos +0
+2025-07-04 17:39:08 [   INFO] Hoja 'Precios Suplemento Bungalow 202' → suplementos +0
